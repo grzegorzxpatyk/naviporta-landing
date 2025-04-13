@@ -1,22 +1,16 @@
 ---
-// Components
-// - Layout
 import Layout from '../layouts/Layout.astro'
-// - UI
 import Hero from '../components/blocks/hero/HomeCTA.astro'
 import Features from '../components/blocks/features/FeatureCards.astro'
 import Testimonial from '../components/blocks/testimonials/BasicDark.astro'
-import HighlightBlocks from '../components/blocks/highlights/HightlightRows.astro'
-import CTA from '../components/blocks/CTA/BasicDark.astro'
 
-// Content
-// - Testimonial background
-import testimonialBackground from '../assets/testimonial-bg-01.webp'
+import testimonialBackground from '../assets/satisfiedCustomer.jpg'
+import Maps from '../components/blocks/maps/Maps.astro'
 // - SEO
 const SEO = {
-	title: 'Foxi | Your Productivity Toolkit',
+	title: 'Tachografy Naviporta',
 	description:
-		'Foxi is a powerful productivity toolkit designed to enhance your workflow and boost your productivity. With features like analytics, security, and integrations, Foxi is the perfect solution for your business.'
+		'Naviporta - Tachografy. Serwis tachografów Miechów, Wolbrom, Olkusz, Kraków. Firma zajmuje się kalibracją, naprawą Tachografów Cyfrowych marek VDO i Stoneridge oraz wymianą Tachografów cyfrowych firmy VDO.'
 }
 ---
 
@@ -24,6 +18,5 @@ const SEO = {
 	<Hero />
 	<Features />
 	<Testimonial bg={testimonialBackground} bgPosition="right" />
-	<HighlightBlocks />
-	<CTA />
+	<Maps />
 </Layout>

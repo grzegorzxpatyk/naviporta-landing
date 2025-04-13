@@ -10,18 +10,8 @@ export interface SocialLink {
 
 export const socialLinks: SocialLink[] = [
 	{
-		name: 'facebook',
-		link: '/',
-		icon: 'fb-icon'
-	},
-	{
-		name: 'twitter',
-		link: '/',
-		icon: 'twitter-icon'
-	},
-	{
-		name: 'discord',
-		link: '/',
-		icon: 'discord-icon'
+		name: 'instagram',
+		link: 'https://www.instagram.com/tachografy_wojciech_partyka',
+		icon: 'mdi:instagram'
 	}
 ]

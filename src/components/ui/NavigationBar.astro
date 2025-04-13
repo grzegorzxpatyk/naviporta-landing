@@ -16,6 +16,7 @@
 import { Icon } from 'astro-icon/components'
 import Button from './Button.astro'
 import Switcher from './ModeSwitcher.astro'
+import Logo from './Logo.astro'
 
 // Data
 import { navigationBarData } from '../../config/navigationBar'
@@ -39,9 +40,18 @@ const savedNavActions = navActions.map((action) => ({
 	<div class="header__container">
 		<nav aria-label="main navigation" role="navigation" class="header__nav">
 			<!-- Logo -->
-			<a href="/" class="header__logo">
-				<img src={logo.src} alt={logo.alt} width="48" height="48" />
-				<span>{logo.text}</span>
+			<a href="/" class="flex flex-row items-center gap-2">
+				<Logo
+					class="fill-logo text-logo h-auto w-28 sm:w-36 dark:fill-zinc-300 dark:text-zinc-300 transition-colors"
+				/>
+				<div class="flex flex-col items-start justify-end text-logo dark:text-zinc-50 transition-colors">
+					<span class="font-sans text-base/3 font-medium sm:text-lg/none"
+						>{logo.heading}</span
+					>
+					<span class="font-sans text-lg/tight font-bold sm:text-2xl/tight"
+						>{logo.subheading}</span
+					>
+				</div>
 			</a>
 
 			<!-- Menu toggle -->
@@ -107,7 +117,7 @@ const savedNavActions = navActions.map((action) => ({
 			<div class="header__actions">
 				{
 					savedNavActions.map((action) => (
-						<Button classes="flex-auto" size={action.size} style={action.style} modal="signup">
+						<Button classes="flex-auto" size={action.size} style={action.style}>
 							{action.name}
 						</Button>
 					))

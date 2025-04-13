@@ -13,59 +13,57 @@ import Card from '../../ui/cards/FeatureCard.astro'
 
 // Content
 // - Cards
-import feature01 from '../../../assets/cards/feature-01.svg'
-import feature02 from '../../../assets/cards/feature-02.svg'
-import feature03 from '../../../assets/cards/feature-03.svg'
-import feature04 from '../../../assets/cards/feature-04.svg'
-import feature05 from '../../../assets/cards/feature-05.svg'
+import service01 from '../../../assets/cards/service02.jpg'
+import service02 from '../../../assets/cards/service03.jpg'
+import service03 from '../../../assets/cards/service06.jpg'
+import service04 from '../../../assets/cards/service06.jpg'
+import service05 from '../../../assets/cards/service06.jpg'
 ---
 
 <Section id="features">
 	<Row>
 		<Col span="12" align="center" classes="mb-12 max-w-4xl mx-auto">
-			<h2 class="text-pretty">Innovative tools to <strong>transform</strong> your workflow</h2>
+			<h2 class="text-pretty">
+				Profesjonalna kalibracja tachografów – <strong>zaufaj ekspertom</strong>
+			</h2>
 			<p class="pb-0 text-lg">
-				Explore the suite of tools designed to streamline your workflow, enhance productivity, and
-				drive growth. Each product is crafted with precision to meet your needs and exceed your
-				expectations.
+				Naprawiamy i kalibrujemy tachografy cyfrowe VDO i Stoneridge. Z nami Twoja flota będzie
+				zawsze gotowa do drogi. Szybko, bezpiecznie i zgodnie z normami.
 			</p>
 		</Col>
 	</Row>
 	<Row>
 		<Col span="4">
 			<Card
-				title="All your data in one place"
-				subtitle="Stay on top of your tasks and deadlines with our intuitive project management tool. Visualize progress, assign tasks, and collaborate seamlessly."
-				image={feature01}
-				link="/features"
+				title="Wymiana tachografów cyfrowych VDO"
+				subtitle="Posiadamy doświadczenie w wymianie tachografów cyfrowych marki VDO. Dzięki nam proces jest prosty, szybki i zgodny z wymogami prawa. Zapewniamy kompleksową obsługę dla Twoich pojazdów."
+				image={service01}
+				link="/services"
 			/>
 		</Col>
 		<Col span="4" classes="flex flex-col gap-6">
 			<Card
-				title="Organize & manage your projects "
-				subtitle="Stay on top of your tasks and deadlines with our intuitive project management tool. "
-				image={feature02}
-				link="/features"
+				title="Zadbaj o terminowe przeglądy tachografów"
+				subtitle="Pamiętaj, że regularne kalibracje i przeglądy tachografów to nie tylko kwestia legalności, ale także bezpieczeństwa na drodze. Skorzystaj z naszych usług i unikaj problemów z kontrolami drogowymi."
+				link="/services"
 			/>
 			<Card
-				title="Keep your team connected"
-				subtitle="With our integrated chat platform share updates, files, and messages in a secure and user-friendly environment."
-				image={feature03}
-				link="/features"
+				title="Kalibracja tachografów cyfrowych"
+				subtitle="Zajmujemy się kompleksową kalibracją tachografów marek VDO i Stoneridge. Dostosowujemy urządzenia do wymogów prawa i parametrów technicznych pojazdu. Kalibracja przebiega sprawnie, z pełną dokumentacją – byś nie musiał martwić się o kontrole drogowe."
+				link="/services"
 			/>
 		</Col>
 		<Col span="4" classes="flex flex-col gap-6">
 			<Card
-				title="Manage your customers"
-				subtitle="Build and nurture customer relationships with our powerful CRM system. "
-				image={feature04}
-				link="/features"
+				title="Naprawa tachografów cyfrowych"
+				subtitle="Tachograf przestał działać? Wyświetla błędy? U nas szybko zdiagnozujesz problem i uzyskasz fachową naprawę. Pracujemy na oryginalnych częściach i gwarantujemy rzetelność wykonania. Zajmujemy się zarówno usterkami mechanicznymi, jak i problemami z oprogramowaniem."
+				link="/services"
 			/>
 			<Card
-				title="Simplify your financial operations"
-				subtitle="Streamline your billing process with our easy-to-use invoicing tool. Create, send, and track invoices effortlessly."
-				image={feature05}
-				link="/features"
+				title="🛠️ Doradztwo i wsparcie techniczne"
+				subtitle="Nie jesteś pewien, co dzieje się z tachografem? Chętnie pomożemy! Doradzimy, jak postępować w przypadku awarii, jak przygotować się do kontroli ITD oraz kiedy najlepiej wykonać kalibrację."
+				image={service02}
+				link="/services"
 			/>
 		</Col>
 	</Row>

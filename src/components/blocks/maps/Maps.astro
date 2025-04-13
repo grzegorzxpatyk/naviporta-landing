@@ -1,26 +1,17 @@
 ---
-import Section from '../../ui/Section.astro'
-import Row from '../../ui/Row.astro'
 import Col from '../../ui/Col.astro'
-
-type Props = {
-	id?: string
-	title?: string
-	text?: string
-	classes?: string
-}
-const { id, title, text, classes } = Astro.props
+import Row from '../../ui/Row.astro'
+import Section from '../../ui/Section.astro'
 ---
 
-<Section id={id} classes={classes}>
-	<Row>
-		<Col span="6" classes={`self-center`}>
-			<header class="max-w-xl">
-				<h1 set:html={title} />
-				<p class="text-lg leading-relaxed">{text}</p>
-			</header>
+<Section
+	><Row>
+		<Col span="12">
+			<h1 class="mb-4">Lokalizacja</h1>
 		</Col>
-		<Col span="3" classes="relative flex flex-col items-start">
+	</Row>
+	<Row>
+		<Col span="6" classes="relative flex flex-col items-start">
 			<h3 class="mb-1">Adres firmy</h3>
 			<iframe
 				class="h-full min-h-56 w-full"
@@ -28,13 +19,13 @@ const { id, title, text, classes } = Astro.props
 				loading="lazy"
 				referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</Col>
-		<Col span="3" classes="relative flex flex-col items-start">
+		<Col span="6" classes="relative flex flex-col items-start">
 			<h3 class="mb-1">Plac</h3>
 			<iframe
 				src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2543.7778099098746!2d20.01619407717702!3d50.3893403917611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTDCsDIzJzIxLjYiTiAyMMKwMDEnMDcuNiJF!5e0!3m2!1sen!2spl!4v1743972017692!5m2!1sen!2spl"
 				loading="lazy"
 				referrerpolicy="no-referrer-when-downgrade"
-				class="h-full w-full min-h-56"></iframe>
-		</Col>
-	</Row>
-</Section>
+				class="h-full min-h-56 w-full"></iframe>
+		</Col></Row
+	></Section
+>

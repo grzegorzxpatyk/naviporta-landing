@@ -21,13 +21,14 @@ export interface Config {
 }
 
 export const configData: Config = {
-	siteTitle: 'Foxi. Tailwind CSS Astro Starter Kit by Oxygenna',
+	siteTitle:
+		'Naviporta Wojciech Partyka - Tachografy. Serwis, kalibracja, naprawa i wymiana tachogragfów cyfrowych Miechów.',
 	siteDescription:
-		'Foxi is a design and development agency that specializes in creating beautiful and functional websites.',
+		'Naviporta Wojciech Partyka - Firma zajmuję się kalibracją, naprawą Tachografów Cyfrowych marek VDO i Stoneridge oraz wymianą Tachografów cyfrowych wyłacznie firmy VDO',
 	ogImage: '/og.jpg',
 	logo: {
 		src: '/logo.svg',
-		alt: 'Foxi. logo'
+		alt: 'Naviporta logo'
 	},
 	canonical: true,
 	noindex: false,

@@ -57,6 +57,7 @@ export default {
           900: "#0f172a",
           950: "#020617",
         },
+        logo: "#143A6F"
       },
       cursor: {
         fancy: "url(https://www.svgrepo.com/show/269/color-picker.svg)",

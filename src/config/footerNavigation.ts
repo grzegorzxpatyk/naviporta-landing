@@ -10,6 +10,7 @@ export interface Logo {
 export interface FooterAbout {
 	title: string
 	aboutText: string
+	companyDetails: string[]
 	logo: Logo
 }
 
@@ -35,77 +36,61 @@ export interface FooterData {
 
 export const footerNavigationData: FooterData = {
 	footerAbout: {
-		title: 'Foxi.',
-		aboutText:
-			'Expertly made, responsive, accessible components in React and HTML ready to be used on your website or app. Just copy and paste them on your Tailwind CSS project.',
+		title: 'Naviporta',
+		aboutText: 'Kalibracja i naprawa tachografów cyfrowych Miechów, Olkusz, Wolbrom, Kraków.',
+		companyDetails: [
+			'Naviporta Wojciech Partyka',
+			'NIP: 6591556151',
+			'Przybysławice 60,',
+			'32-241 Miechów'
+		],
 		logo: {
 			src: '/logo.svg',
-			alt: 'The tailwind astro theme',
-			text: 'Foxi.'
+			alt: 'Naviporta logo',
+			text: 'Tachografy Naviporta'
 		}
 	},
 	footerColumns: [
 		{
-			category: 'Product',
+			category: 'Usługi',
 			subCategories: [
 				{
-					subCategory: 'Features',
-					subCategoryLink: '/features'
+					subCategory: 'Tachografy',
+					subCategoryLink: '/services'
 				},
 				{
-					subCategory: 'FAQ',
-					subCategoryLink: '/faq'
+					subCategory: 'Serwis',
+					subCategoryLink: '/services'
 				},
 				{
-					subCategory: 'Pricing',
-					subCategoryLink: '/pricing'
+					subCategory: 'Kalibracja',
+					subCategoryLink: '/services'
 				},
 				{
-					subCategory: 'Changelog',
-					subCategoryLink: '/changelog'
-				},
-				{
-					subCategory: 'Terms',
-					subCategoryLink: '/terms'
+					subCategory: 'Wymiana',
+					subCategoryLink: '/services'
 				}
 			]
 		},
 		{
-			category: 'About us',
+			category: 'Kontakt',
 			subCategories: [
 				{
-					subCategory: 'About us',
-					subCategoryLink: '/'
-				},
-				{
-					subCategory: 'News',
-					subCategoryLink: '/blog'
-				},
-				{
-					subCategory: 'Careers',
-					subCategoryLink: '/blog'
-				}
-			]
-		},
-		{
-			category: 'Get in touch',
-			subCategories: [
-				{
-					subCategory: 'Contact',
+					subCategory: 'Godziny pracy',
 					subCategoryLink: '/contact'
 				},
 				{
-					subCategory: 'Support',
+					subCategory: 'Telefon',
 					subCategoryLink: '/contact'
 				},
 				{
-					subCategory: 'Join us',
+					subCategory: 'Lokalizacja',
 					subCategoryLink: '/contact'
 				}
 			]
 		}
 	],
 	subFooter: {
-		copywriteText: '© Foxi 2024.'
+		copywriteText: '© Naviporta 2025.'
 	}
 }
